@@ -1,1 +1,96 @@
-
+/* PC */
+@media screen and (min-width: 992px) {
+  .header-menu-mobile {
+    display: none;
+  }
+}
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+  /* Header */
+  .header .header-contact a {
+    display: none;
+  }
+  .header .header-menu {
+    display: none;
+  }
+  .header .header-container {
+    position: relative;
+    border-bottom: 1px solid #d6d3e2;
+  }
+  .header .header-mail {
+    position: absolute;
+    right: 42px;
+    width: 32px;
+    height: 32px;
+  }
+  .header-menu-mobile {
+    width: 32px;
+    height: 32px;
+    border-radius: 100rem;
+    border: 2px solid rgba(93, 59, 238, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px 0;
+    flex-direction: column;
+  }
+  .header-menu-mobile div {
+    width: 15px;
+    height: 2px;
+    background-color: var(--primary-color);
+  }
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  .menu-drawer {
+    position: fixed;
+    inset: 0 40% 0 0;
+    background-color: #fff;
+    z-index: 4;
+    transform: translateX(-100%);
+    transition: all 0.2s linear;
+  }
+  .menu-checkbox:checked ~ .overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+  .menu-drawer .header-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px 0;
+  }
+  /* Hero */
+  .hero-bg-decor {
+    display: none;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* Header */
+  .header .header-logo {
+    left: -236px;
+  }
+  .menu-drawer {
+    padding: 40px;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+  /* Header */
+  .header .header-logo {
+    left: -88px;
+  }
+  .menu-drawer {
+    inset: 0 20% 0 0;
+    padding: 20px;
+  }
+}

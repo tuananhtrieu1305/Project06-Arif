@@ -95,6 +95,7 @@
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
+    <!-- PC Header -->
     <header class="header">
       <div class="container header-container">
         <div class="header-contact">
@@ -104,6 +105,41 @@
           <a href="mailto:hi@arif.interactive">hi@arif.interactive</a>
         </div>
         <img src="./assets/img/logo.svg" alt="Arif" class="header-logo" />
+        <nav class="header-nav">
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a href="#!" class="header-menu-link" title="Projects"
+                >Projects</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a href="#!" class="header-menu-link" title="Journey">Journey</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#!" class="header-menu-link" title="Service">Service</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#!" class="header-menu-link" title="Contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <label for="menu-checkbox" class="header-menu-mobile">
+          <div></div>
+          <div></div>
+        </label>
+      </div>
+    </header>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <label for="menu-checkbox" class="overlay"></label>
+      <div class="menu-drawer">
         <nav class="header-nav">
           <ul class="header-menu">
             <li class="header-menu-item">
